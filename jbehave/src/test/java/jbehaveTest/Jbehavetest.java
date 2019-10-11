@@ -12,6 +12,7 @@ import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 //import org.junit.runner.RunWith;
 //import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -45,6 +46,7 @@ public class Jbehavetest extends SerenityStories {
     }
 
     // Specify a feature file
+    @Test
     public List<String> storyPaths() {
         return Arrays.asList("./res/jbehave.story");
     }
